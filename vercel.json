@@ -1,9 +1,12 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "src/index.ts",  // Chemin vers le point d'entrée de votre application TypeScript
-      "use": "@vercel/node"
+      "src": "src/index.ts",
+      "use": "@vercel/node",
+      "config": {
+        "distDir": "build"
+      }
     }
-  ],
-  "outputDirectory": "build"
+  ]
 }
